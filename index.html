@@ -2,23 +2,36 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <title>Ares Daniel Rosas Flores</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Roboto', sans-serif;
 margin:0;
-background:#f4f6f8;
+background:#f5f7fa;
 color:#333;
+scroll-behavior:smooth;
 }
 
 header{
-background:#1e2a38;
+background:linear-gradient(135deg,#1e3c72,#2a5298);
 color:white;
-padding:40px;
+padding:60px 20px;
 text-align:center;
+}
+
+header img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+border:4px solid white;
 }
 
 header h1{
@@ -28,70 +41,94 @@ font-size:40px;
 
 header p{
 font-size:18px;
-margin-top:10px;
+opacity:0.9;
 }
 
 nav{
-background:#2f3e50;
-padding:10px;
+background:#1c2533;
+padding:12px;
 text-align:center;
+position:sticky;
+top:0;
+z-index:10;
 }
 
 nav a{
 color:white;
-margin:0 15px;
+margin:0 18px;
 text-decoration:none;
-font-weight:bold;
+font-weight:500;
 }
 
 nav a:hover{
-text-decoration:underline;
+color:#6db3ff;
 }
 
 .container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
-padding:40px;
+padding:50px 25px;
 }
 
 section{
-margin-bottom:50px;
+margin-bottom:60px;
 }
 
 h2{
 border-bottom:2px solid #ddd;
 padding-bottom:10px;
+margin-bottom:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+margin-bottom:20px;
+transition:transform .2s;
+}
+
+.card:hover{
+transform:translateY(-3px);
 }
 
 ul{
 line-height:1.8;
 }
 
-.project{
-background:white;
-padding:20px;
-border-radius:6px;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
-margin-top:20px;
-}
-
 footer{
-background:#1e2a38;
+background:#1c2533;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
+}
+
+.profile-links a{
+display:inline-block;
+margin-right:15px;
+color:#2a5298;
+font-weight:500;
+text-decoration:none;
+}
+
+.profile-links a:hover{
+text-decoration:underline;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
 
+<img src="photo.jpg" alt="Profile Photo">
+
 <h1>Ares Daniel Rosas Flores</h1>
 
-<p>Physics Student | UNAM | Research in Mechanics and Aerospace Systems</p>
+<p>Physics Student | UNAM | Mechanics • Aerospace Systems • Computational Physics</p>
 
 </header>
 
@@ -100,6 +137,8 @@ padding:20px;
 <a href="#about">About</a>
 <a href="#research">Research</a>
 <a href="#projects">Projects</a>
+<a href="#publications">Publications</a>
+<a href="#notes">Research Notes</a>
 <a href="#skills">Skills</a>
 <a href="#contact">Contact</a>
 
@@ -111,16 +150,21 @@ padding:20px;
 
 <h2>About</h2>
 
+<div class="card">
+
 <p>
-  I am a physics student at the National Autonomous University of Mexico (UNAM).
-  My academic interests include classical mechanics, fluid dynamics, 
-  aerospace systems and quantum physics.
+I am a physics student at the Universidad Nacional Autónoma de México (UNAM). My academic interests include classical mechanics, fluid dynamics, aerospace systems and quantum physics.
 </p>
 
 <p>
-  I am currently working on projects involving the analysis of physical systems,
-   experimental methods and small-scale aerospace platforms such as CanSat.
+Currently I am involved in projects related to small-scale aerospace systems such as CanSat platforms, where I study descent dynamics, aerodynamic behavior and experimental data analysis.
 </p>
+
+<p>
+My long-term goal is to contribute to research in physics and engineering through experimental and computational approaches.
+</p>
+
+</div>
 
 </section>
 
@@ -128,15 +172,19 @@ padding:20px;
 
 <h2>Research Interests</h2>
 
+<div class="card">
+
 <ul>
 
 <li>Classical Mechanics</li>
 <li>Fluid Dynamics</li>
 <li>Aerospace Systems</li>
-<li>Computational Physics</li>
 <li>Quantum Physics</li>
+<li>Experimental Physics</li>
 
 </ul>
+
+</div>
 
 </section>
 
@@ -144,25 +192,62 @@ padding:20px;
 
 <h2>Projects</h2>
 
-<div class="project">
+<div class="card">
 
 <h3>CanSat Project</h3>
 
 <p>
-Development and analysis of a small satellite payload system designed for
-atmospheric descent experiments. The project involves sensor integration,
-data analysis and aerodynamic study of descent dynamics.
+Development of a small satellite payload system designed for atmospheric descent experiments. The project involves sensor integration, flight data analysis and aerodynamic modeling of descent dynamics.
 </p>
 
 </div>
 
-<div class="project">
+<div class="card">
 
 <h3>Physics Simulations</h3>
 
 <p>
-Numerical simulations of physical systems including motion under drag,
-fluid behavior and dynamical systems using computational tools.
+Computational modeling of physical systems including motion under drag forces, dynamical systems and numerical approaches to fluid behavior using Python and MATLAB.
+</p>
+
+</div>
+
+</section>
+
+<section id="publications">
+
+<h2>Publications</h2>
+
+<div class="card">
+
+<p>
+No publications yet. Research work in preparation.
+</p>
+
+</div>
+
+</section>
+
+<section id="notes">
+
+<h2>Research Notes</h2>
+
+<div class="card">
+
+<h3>CanSat Aerodynamic Analysis</h3>
+
+<p>
+Preliminary study on the aerodynamic behavior of small payload systems during atmospheric descent.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Fluid Dynamics of Small Propellers</h3>
+
+<p>
+Conceptual and computational exploration of thrust generation in small-scale propeller systems.
 </p>
 
 </div>
@@ -173,6 +258,8 @@ fluid behavior and dynamical systems using computational tools.
 
 <h2>Technical Skills</h2>
 
+<div class="card">
+
 <ul>
 
 <li>Python</li>
@@ -180,8 +267,11 @@ fluid behavior and dynamical systems using computational tools.
 <li>LaTeX</li>
 <li>Scientific data analysis</li>
 <li>Experimental physics methods</li>
+<li>Git & GitHub</li>
 
 </ul>
+
+</div>
 
 </section>
 
@@ -189,9 +279,23 @@ fluid behavior and dynamical systems using computational tools.
 
 <h2>Contact</h2>
 
+<div class="card">
+
 <p>Email: aresdrf@gmail.com</p>
 
 <p>GitHub: github.com/aresd18</p>
+
+<div class="profile-links">
+
+<a href="#">Google Scholar</a>
+
+<a href="#">ResearchGate</a>
+
+<a href="#">ORCID</a>
+
+</div>
+
+</div>
 
 </section>
 
@@ -204,4 +308,5 @@ fluid behavior and dynamical systems using computational tools.
 </footer>
 
 </body>
+
 </html>
