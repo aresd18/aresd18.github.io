@@ -6,37 +6,37 @@
 <meta charset="UTF-8">
 <title>Ares Daniel Rosas Flores</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-font-family: 'Roboto', sans-serif;
+font-family:'Inter',sans-serif;
 margin:0;
-background:#f5f7fa;
+background:#f5f7fb;
 color:#333;
 scroll-behavior:smooth;
 }
 
 header{
-background:linear-gradient(135deg,#1e3c72,#2a5298);
+background:linear-gradient(135deg,#1f3b73,#2a5298);
 color:white;
 padding:60px 20px;
 text-align:center;
 }
 
 header img{
-width:140px;
-height:140px;
+width:150px;
+height:150px;
 border-radius:50%;
+border:4px solid white;
 object-fit:cover;
 margin-bottom:20px;
-border:4px solid white;
 }
 
 header h1{
 margin:0;
-font-size:40px;
+font-size:38px;
 }
 
 header p{
@@ -45,12 +45,11 @@ opacity:0.9;
 }
 
 nav{
-background:#1c2533;
-padding:12px;
+background:#1b2430;
+padding:14px;
 text-align:center;
 position:sticky;
 top:0;
-z-index:10;
 }
 
 nav a{
@@ -61,13 +60,13 @@ font-weight:500;
 }
 
 nav a:hover{
-color:#6db3ff;
+color:#7fb3ff;
 }
 
 .container{
 max-width:1000px;
 margin:auto;
-padding:50px 25px;
+padding:50px 20px;
 }
 
 section{
@@ -84,36 +83,36 @@ margin-bottom:25px;
 background:white;
 padding:25px;
 border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 margin-bottom:20px;
-transition:transform .2s;
-}
-
-.card:hover{
-transform:translateY(-3px);
 }
 
 ul{
 line-height:1.8;
 }
 
+.project-title{
+font-weight:600;
+font-size:20px;
+margin-bottom:10px;
+}
+
+.links a{
+margin-right:15px;
+color:#2a5298;
+text-decoration:none;
+font-weight:500;
+}
+
+.links a:hover{
+text-decoration:underline;
+}
+
 footer{
-background:#1c2533;
+background:#1b2430;
 color:white;
 text-align:center;
 padding:25px;
-}
-
-.profile-links a{
-display:inline-block;
-margin-right:15px;
-color:#2a5298;
-font-weight:500;
-text-decoration:none;
-}
-
-.profile-links a:hover{
-text-decoration:underline;
 }
 
 </style>
@@ -124,11 +123,11 @@ text-decoration:underline;
 
 <header>
 
-<img src="photo.jpg" alt="Profile Photo">
+<img src="photo.jpg">
 
 <h1>Ares Daniel Rosas Flores</h1>
 
-<p>Physics Student | UNAM | Mechanics • Aerospace Systems • Computational Physics</p>
+<p>Physics Student • UNAM • Mechanics | Aerospace Systems | Computational Physics</p>
 
 </header>
 
@@ -137,7 +136,6 @@ text-decoration:underline;
 <a href="#about">About</a>
 <a href="#research">Research</a>
 <a href="#projects">Projects</a>
-<a href="#publications">Publications</a>
 <a href="#notes">Research Notes</a>
 <a href="#skills">Skills</a>
 <a href="#contact">Contact</a>
@@ -153,15 +151,11 @@ text-decoration:underline;
 <div class="card">
 
 <p>
-I am a physics student at the Universidad Nacional Autónoma de México (UNAM). My academic interests include classical mechanics, fluid dynamics, aerospace systems and quantum physics.
+I am a physics student at the Universidad Nacional Autónoma de México (UNAM). My interests include classical mechanics, fluid dynamics, aerospace systems and quantum physics.
 </p>
 
 <p>
-Currently I am involved in projects related to small-scale aerospace systems such as CanSat platforms, where I study descent dynamics, aerodynamic behavior and experimental data analysis.
-</p>
-
-<p>
-My long-term goal is to contribute to research in physics and engineering through experimental and computational approaches.
+Currently I participate in projects involving small satellite platforms such as CanSat systems, where I study aerodynamic behavior, descent dynamics and experimental data analysis.
 </p>
 
 </div>
@@ -194,34 +188,20 @@ My long-term goal is to contribute to research in physics and engineering throug
 
 <div class="card">
 
-<h3>CanSat Project</h3>
+<div class="project-title">CanSat Project</div>
 
 <p>
-Development of a small satellite payload system designed for atmospheric descent experiments. The project involves sensor integration, flight data analysis and aerodynamic modeling of descent dynamics.
+Development of a small satellite payload system designed for atmospheric descent experiments. The project includes sensor integration, data analysis and aerodynamic modeling of descent dynamics.
 </p>
 
 </div>
 
 <div class="card">
 
-<h3>Physics Simulations</h3>
+<div class="project-title">Physics Simulations</div>
 
 <p>
-Computational modeling of physical systems including motion under drag forces, dynamical systems and numerical approaches to fluid behavior using Python and MATLAB.
-</p>
-
-</div>
-
-</section>
-
-<section id="publications">
-
-<h2>Publications</h2>
-
-<div class="card">
-
-<p>
-No publications yet. Research work in preparation.
+Numerical simulations of dynamical systems such as motion under drag forces and simplified fluid dynamics models using computational tools.
 </p>
 
 </div>
@@ -234,20 +214,20 @@ No publications yet. Research work in preparation.
 
 <div class="card">
 
-<h3>CanSat Aerodynamic Analysis</h3>
+<div class="project-title">Aerodynamic Analysis of CanSat Descent</div>
 
 <p>
-Preliminary study on the aerodynamic behavior of small payload systems during atmospheric descent.
+Preliminary analysis of drag forces and stability in small atmospheric descent payloads.
 </p>
 
 </div>
 
 <div class="card">
 
-<h3>Fluid Dynamics of Small Propellers</h3>
+<div class="project-title">Fluid Dynamics of Small Propellers</div>
 
 <p>
-Conceptual and computational exploration of thrust generation in small-scale propeller systems.
+Conceptual study of thrust generation and flow behavior in small-scale propeller systems.
 </p>
 
 </div>
@@ -265,8 +245,8 @@ Conceptual and computational exploration of thrust generation in small-scale pro
 <li>Python</li>
 <li>MATLAB</li>
 <li>LaTeX</li>
-<li>Scientific data analysis</li>
-<li>Experimental physics methods</li>
+<li>Scientific Data Analysis</li>
+<li>Experimental Physics</li>
 <li>Git & GitHub</li>
 
 </ul>
@@ -285,7 +265,7 @@ Conceptual and computational exploration of thrust generation in small-scale pro
 
 <p>GitHub: github.com/aresd18</p>
 
-<div class="profile-links">
+<div class="links">
 
 <a href="#">Google Scholar</a>
 
